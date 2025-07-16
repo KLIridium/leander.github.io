@@ -212,3 +212,19 @@ document.addEventListener('DOMContentLoaded', function() {
     handleMobileScaling();
     window.addEventListener('resize', handleMobileScaling);
 });
+
+// Resume download functionality
+const resumeBtn = document.getElementById('resume-download-btn');
+const downloadNotification = document.querySelector('.download-notification');
+
+resumeBtn.addEventListener('click', function(e) {
+    // Show notification after a small delay to ensure download started
+    setTimeout(() => {
+        downloadNotification.classList.add('show');
+        
+        // Hide notification after 3 seconds
+        setTimeout(() => {
+            downloadNotification.classList.remove('show');
+        }, 3000);
+    }, 100);
+});
