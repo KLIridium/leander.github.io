@@ -622,3 +622,23 @@ li {
         display: block;
     }
 }
+
+.download-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #aa8e57;
+    color: #080808;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.download-notification.show {
+    transform: translateY(0);
+    opacity: 1;
+}
