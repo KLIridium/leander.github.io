@@ -3,29 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ken Leander A. Garcia | IT Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ken's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>IT Graduate | Full-Stack Developer</p>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <p>Recent IT graduate with expertise in Python, Java, and web development.</p>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>E-Commerce Website</h3>
-            <p>Built with React & Node.js</p>
-            <a href="projects.html">View Project</a>
+<body>cert
+    <div class="container">
+        <!-- Left Side (Fixed) -->
+        <div class="left-side">
+            <div class="profile-section">
+                <div class="profile-pic" title="Click to Enlarge">
+                    <img src="certificatesandimages/kenpic.png" alt="Profile Picture">
+                </div>
+                <div class="name">
+                    <span>Hi I'm </span>
+                    <span class="hover-name">K</span>
+                    <span class="hover-name">E</span>
+                    <span class="hover-name">N</span>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <ul>
+                    <li class="nav-item active" data-section="about">
+                        <i class="fas fa-user"></i>
+                        <span>About Me</span>
+                    </li>
+                    <li class="nav-item" data-section="game-dev">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Game Developer</span>
+                    </li>
+                    <li class="nav-item" data-section="web-dev">
+                        <i class="fas fa-globe"></i>
+                        <span>Web Design</span>
+                    </li>
+                    <li class="nav-item" data-section="mobile-dev">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile Development</span>
+                    </li>
+                    <li class="nav-item" data-section="certifications">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certifications</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="resume-download">
+                <a href="#" class="resume-btn">
+                    <i class="fas fa-download"></i>
+                    <span>Download Resume</span>
+                </a>
+            </div>
         </div>
-    </section>
-    <footer>
-        <a href="https://github.com/yourusername">GitHub</a> | 
-        <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-    </footer>
+
+        <!-- Right Side (Scrollable) -->
+        <div class="right-side">
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h1>About Me</h1>
+                <p>Hello! I'm Ken, a passionate developer with expertise in multiple programming languages and platforms. I specialize in creating immersive games, responsive web applications, and mobile solutions.</p>
+                <p>With a strong foundation in both technical and soft skills, I approach every project with creativity and attention to detail. My academic achievements and professional certifications reflect my dedication to continuous learning and excellence in the field of technology.</p>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section">
+                <h1>Technical Skills</h1>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h2>Programming</h2>
+                        <ul>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h2>Database Management</h2>
+                        <ul>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h2>Business Solutions</h2>
+                        <ul>
+                            <li>SAP Business One</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h2>Office Tools and Software</h2>
+                        <ul>
+                            <li>Microsoft Office: Word, PowerPoint, Excel</li>
+                            <li>Teams</li>
+                            <li>Outlook</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h1>Soft Skills</h1>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <ul>
+                            <li>Time Management</li>
+                            <li>Effective Communication</li>
+                            <li>Project Management</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <h1>Professional Experience</h1>
+                <div class="experience-item">
+                    <h2>Game Developer</h2>
+                    <p class="date">2021 - Present</p>
+                    <ul>
+                        <li>Developed interactive 3D games using Unity and C#</li>
+                        <li>Created educational simulation games with focus on user engagement</li>
+                        <li>Collaborated with designers and artists to create immersive experiences</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <h1>Education</h1>
+                <div class="education-item">
+                    <h2>STI College San Jose Del Monte</h2>
+                    <p class="date">2021-2025</p>
+                    <ul>
+                        <li>Developed a game titled "Disaster Rush: A 3D Virtual Educational Simulation Game for Natural Disaster and Survival" using C# and Unity, which was showcased in a Capstone Exhibit.</li>
+                        <li>Graduated with Latin honors, cum laude, in recognition of academic excellence.</li>
+                        <li>President's Lister from 2022 to 2025 for outstanding academic performance across consecutive semesters.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Game Dev Section -->
+            <section id="game-dev" class="content-section">
+                <h1>Game Development Projects</h1>
+                
+                <div class="project">
+                    <h2>Stealth and Steal</h2>
+                    <div class="project-images">
+                        <img src="certificatesandimages/sstitle.png" alt="Stealth and Steal Title">
+                        <img src="certificatesandimages/ss1.png" alt = "Stealth and Steal Screenshot 1">
+                        <img src="certificatesandimages/ss2.png" alt = "Stealth and Steal Screenshot 2">
+                        <img src="certificatesandimages/ss3.png" alt = "Stealth and Steal Screenshot 3">
+                    </div>
+                    <div class="project-description">
+                        <p>A top-down stealth-action game set in a horror-infused Feudal Japan, inspired by Robbery Bob, blending strategic evasion, tense encounters, and supernatural threats in a cursed, war-torn world.</p>
+                    </div>
+                    <div class="project-summary">
+                        <p>In a war-torn land plagued by a deadly curse, you are the last hope of a noble Daimyo resisting the rise of darkness. As his most elite ninja, infiltrate enemy lines, battle undead horrors, and uncover the dark truth behind a fallen shogun's betrayal.</p>
+                        <p><i>AI Programmer, Level Designer</i></p>
+                    </div>
+                </div>
+                
+                <div class="project">
+                    <h2>Disaster Rush</h2>
+                    <div class="project-images">
+                        <img src="certificatesandimages/drtitle.png" alt="Disaster Rush Title">
+                        <img src="certificatesandimages/dr1.png" alt="Disaster Rush Screenshot 1">
+                        <img src="certificatesandimages/dr2.png" alt="Disaster Rush Screenshot 2">
+                        <img src="certificatesandimages/dr3.png" alt="Disaster Rush Screenshot 3">
+                    </div>
+                    <div class="project-description">
+                        <p>A 3D virtual educational simulation game for natural disaster and survival</p>
+                    </div>
+                    <div class="project-summary">
+                        <p>"Disaster Rush" is a 3D educational simulation game designed to raise awareness about natural disasters and teach effective survival strategies through immersive, scenario-based gameplay. Targeting students, emergency responders, and the general public, the game blends realistic challenges with interactive learning to promote disaster preparedness and resilience.</p>
+                        <p><i>Lead Programmer</i></p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h2>Keycode Escape</h2>
+                    <div class="project-images">
+                        <img src="certificatesandimages/ketitle.png" alt="Keycode Escape Title">
+                        <img src="certificatesandimages/ke1.png" alt="Keycode Escape Screenshot 1">
+                        <img src="certificatesandimages/ke2.png" alt="Keycode Escape Screenshot 2">
+                        <img src="certificatesandimages/ke3.png" alt="Keycode Escape Screenshot 3">
+                    </div>
+                    <div class="project-description">
+                        <p>KeyCode Escape is a clever twist on classic arcade platformers, inspired by Donkey Kong and built around the theme "It’s not a bug, it’s a feature."</p>
+                    </div>
+                    <div class="project-summary">
+                        <p>Players must navigate glitchy levels, uncover hidden mechanics, and exploit "bugs" as intentional gameplay elements to escape each stage. Thinking outside the box isn’t just encouraged—it’s required.</p>
+                        <p><i>Programmer</i></p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Web Dev Section -->
+            <section id="web-dev" class="content-section">
+                <h1>Web Design Projects</h1>
+                <p>Coming soon...</p>
+            </section>
+
+            <!-- Mobile Dev Section -->
+            <section id="mobile-dev" class="content-section">
+                <h1>Mobile Development Projects</h1>
+                <p>Coming soon...</p>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="content-section">
+                <h1>Certifications</h1>
+                <ul class="certifications-list">
+                    <li data-image="certificatesandimages/sap.jpg">
+                    <i class="fas fa-certificate"></i>
+                        SAP Business One Training
+                    </li>
+                    <li>
+                        <i class="fas fa-certificate"></i>
+                        Philippines Civil Service Professional Eligibility
+                    </li>
+                    <li data-image="certificatesandimages/entrepmindset.png">
+                        <i class="fas fa-certificate"></i>
+                        Entrepreneurial Mindset
+                    </li>
+                    <li data-image="certificatesandimages/s2s.png">
+                        <i class="fas fa-certificate"></i>
+                        S2S Academy
+                    </li>
+                    <li data-image="certificatesandimages/javafoundations.png">
+                        <i class="fas fa-certificate"></i>
+                            Java Foundations
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h1>Contact Me</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+63 947 279 9794</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>kleander1518@gmail.com</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://www.facebook.com/kenleander.garcia" target="_blank" class="social-link facebook">
+                        <i class="fab fa-square-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://m.me/kenleander.garcia" target="_blank" class="social-link messenger">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <span>Messenger</span>
+                    </a>
+                    <a href="https://discord.com/channels/989016634066874408/989016636197601353" target="_blank" class="social-link discord">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://www.instagram.com/klean_20?igsh=amxrcjF0azFtaDU5" target="_blank" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ken-leander-a-garcia-364562308" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="profile-modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="certificatesandimages/kenenlarge.png" alt="Enlarged Profile Picture">
+    </div>
+    </div>
+
+    <div class="image-modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img class="modal-image" src="" alt="Enlarged Image">
+    </div>
+    </div>
+
+    <div class="mobile-menu-toggle">
+    <i class="fas fa-bars"></i>
+    </div>
+
 </body>
 </html>
