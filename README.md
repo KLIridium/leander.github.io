@@ -1,1 +1,1 @@
-Test
+Hi, I’m Ken. I hold a Bachelor of Science in Information Technology and have experience in programming, web development, and customer service. I enjoy building projects that improve efficiency and user experience, and I’m always eager to learn new tools and skills. This portfolio showcases my work, from academic projects to personal initiatives, highlighting both my technical abilities and problem-solving mindset.
