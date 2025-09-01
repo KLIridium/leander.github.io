@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Skyline</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="theme-toggle" id="themeToggle">
+        <div class="sun-moon"></div>
+    </div>
+    <a href="../../../index.html" class="home-button" id="homeButton">
+        <svg class="home-icon" viewBox="0 0 576 512">
+            <path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0 -15.3 0zM571.6 251.47L488 182.56V44a12 12 0 0 0 -12-12h-56a12 12 0 0 0 -12 12v72.61L318.47 43a48 48 0 0 0 -61 0L4.34 251.47a12 12 0 0 0 -1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 极值 15.3 0L530.9 301a12 12 0 0 极值 16.9-1.6l25.5-31a12 12 0 0 极值 -1.7-16.93z"/>
+        </svg>
+    </a>
+    
+    <div class="background-buildings">
+        <div class="stars"></div>
+        <div class="shooting-star"></div>
+        <div class="clouds"></div>
+        <div class="moon"></div>
+        
+        <div></div>
+        <div></div>
+        <div class="bb1 building-wrap" data-name="Office Tower">
+            <div class="bb1a bb1-window"></div>
+            <div class="bb1b bb1-window"></div>
+            <div class="bb1c bb1-window"></div>
+            <div class="bb1d"></div>
+        </div>
+        <div class="bb2" data-name="Tech Hub">
+            <div class="bb2a"></div>
+            <div class="bb2b"></div>
+        </div>
+        <div class="bb3" data-name="Apartment Complex"></div>
+        <div></div>
+        <div class="bb4 building-wrap" data-name="Library">
+            <div class="bb4a"></div>
+            <div class="bb4b"></div>
+            <div class="bb4c window-wrap">
+                <div class="bb4-window"></div>
+                <div class="bb4-window"></div>
+                <div class="bb4-window"></div>
+                <div class="bb4-window"></div>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="foreground-buildings">
+        <div class="street">
+            
+            <div class="streetlight">
+                <div class="light"></div>
+                <div class="post"></div>
+            </div>
+            <div class="car-container">
+                <div class="car">
+                    <div class="car-top"></div>
+                    <div class="car-body">
+                        <div class="window"></div>
+                        <div class="door-handle"></div>
+                        <div class="headlight"></div>
+                        <div class="taillight"></div>
+                        <div class="wheel front-wheel"></div>
+                        <div class="wheel back-wheel"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="streetlight">
+                <div class="light"></div>
+                <div class="post"></div>
+            </div>
+        </div>
+        <div></div>
+        <div class="fb1 building-wrap" data-name="Cafe">
+            <div class="fb1a"></div>
+            <div class="fb1b"></div>
+            <div class="fb1c"></div>
+        </div>
+        <div class="fb2" data-name="Restaurant">
+            <div class="fb2a"></div>
+            <div class="fb2b window-wrap">
+                <div class="fb2-window"></div>
+                <div class="fb2-window"></div>
+                <div class="fb2-window"></div>
+            </div>
+        </div>
+        <div></div>
+        <div class="fb3 building-wrap" data-name="Shopping Mall">
+            <div class="fb3a window-wrap">
+                <div class="fb3-window"></div>
+                <div class="fb3-window"></div>
+                <div class="fb3-window"></div>
+            </div>
+            <div class="fb3b"></div>
+            <div class="fb3a"></div>
+            <div class="fb3b"></div>
+        </div>
+        <div class="fb4" data-name="Hotel">
+            <div class="fb4a"></div>
+            <div class="fb4b">
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+                <div class="fb4-window"></div>
+            </div>
+        </div>
+        <div class="fb5" data-name="Bank"></div>
+        <div class="fb6" data-name="Cinema"></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
