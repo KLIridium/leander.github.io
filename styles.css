@@ -74,7 +74,13 @@ body {
     width: 100%;
     margin-bottom: 30px;
 }
-
+.project a{
+    color: #aa8e57;
+    text-decoration:none;
+}
+.project a:hover{
+    text-decoration: underline;
+}
 .navigation ul {
     list-style: none;
 }
