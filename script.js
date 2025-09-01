@@ -227,4 +227,4 @@ resumeBtn.addEventListener('click', function(e) {
             downloadNotification.classList.remove('show');
         }, 3000);
     }, 100);
-});
+});    
