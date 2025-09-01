@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knights Garment - Premium Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <a href="../../../index.html">
+                    <img id="header-img" src="logo.png" alt="Knights Garment logo">
+                </a>
+            </div>
+
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav id="nav-bar" class="nav-closed">
+                <ul>
+                    <li><a class="nav-link" href="#feature">Features</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How It's Made</a></li>
+                    <li><a class="nav-link" href="#pricing">Products</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h2>Knights Garment<br>Premium, Handcrafted Clothing</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email address" required>
+                <input id="submit" type="submit" value="Get Exclusive Offers" class="btn">
+            </form>
+        </section>
+                
+        <div class="container">
+            <h1 id="feature">Features</h1>
+            <section id="features">
+                
+                <div class="grid">
+                    <div class="icon"><i class="fa fa-3x fa-feather"></i></div>
+                    <div class="desc">
+                        <h2>Premium Materials</h2>
+                        <p>
+                            Our jackets, sweaters, windbreakers, and turtlenecks are made from the highest quality materials 
+                            sourced from ethical suppliers around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+                    <div class="desc">
+                        <h2>Fast Shipping</h2>
+                        <p>
+                            We ensure quick delivery of all our products. Free returns within 30 days if you're not satisfied.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-leaf" aria-hidden="true"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Eco-Friendly</h2>
+                        <p>
+                            All our clothing is produced using sustainable methods that minimize environmental impact.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="how-it-works">
+                <h2>How Our Clothing Is Made</h2>
+                <iframe id="video" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </section>
+            
+            <section id="pricing">
+                <div class="product" id="jackets">
+                    <div class="level">Premium Jackets</div>
+                    <h2>$129</h2>
+                    <ol>
+                        <li>Water-resistant</li>
+                        <li>Insulated lining</li>
+                        <li>Multiple pockets</li>
+                        <li>Available in 5 colors</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="sweaters">
+                    <div class="level">Cashmere Sweaters</div>
+                    <h2>$99</h2>
+                    <ol>
+                        <li>100% cashmere</li>
+                        <li>Machine washable</li>
+                        <li>Classic design</li>
+                        <li>Available in 7 colors</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="windbreakers">
+                    <div class="level">Windbreakers</div>
+                    <h2>$89</h2>
+                    <ol>
+                        <li>Lightweight & packable</li>
+                        <li>Wind and water resistant</li>
+                        <li>Breathable fabric</li>
+                        <li>Perfect for outdoor activities</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="turtlenecks">
+                    <div class="level">Turtlenecks</div>
+                    <h2>$79</h2>
+                    <ol>
+                        <li>Soft cotton blend</li>
+                        <li>Warm and comfortable</li>
+                        <li>Versatile styling</li>
+                        <li>Available in 6 colors</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
+            
+            <footer>
+                <ul>
+                    <li><a href="#" class="footer-link" data-type="privacy">Privacy</a></li>
+                    <li><a href="#" class="footer-link" data-type="terms">Terms</a></li>
+                    <li><a href="#" class="footer-link" data-type="contact">Contact</a></li>
+                </ul>
+                <span>Copyright 2025, Knights Garment</span>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Modal for footer links -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Sample Title</h2>
+            <p id="modal-text">Sample text goes here.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
