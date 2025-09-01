@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for home icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Burger Menu Button (Visible on small screens) -->
+    <button id="burger-menu" class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <!-- Close Button (Visible when menu is open) -->
+    <button id="close-menu" class="close-menu">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <nav id="navbar">
+        <header>Web Dev Docs</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a></li>
+            <li><a class="nav-link" href="#HTML_Fundamentals">HTML Fundamentals</a></li>
+            <li><a class="nav-link" href="#CSS_Concepts">CSS Concepts</a></li>
+            <li><a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a></li>
+            <li><a class="nav-link" href="#Responsive_Design">Responsive Design</a></li>
+            <li><a class="nav-link" href="#Event_Handling">Event Handling</a></li>
+            <li><a class="nav-link" href="#Forms_Validation">Forms Validation</a></li>
+            <li><a class="nav-link" href="#CSS_Frameworks">CSS Frameworks</a></li>
+            <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+            <!-- Home button in navbar -->
+            <li id="nav-home-item">
+                <a class="nav-link" href="../../../index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <!-- All the content sections remain the same -->
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>Welcome to the Web Development Documentation. This comprehensive guide covers the fundamental technologies of modern web development: JavaScript, HTML, and CSS.</p>
+                <p>These three technologies work together to create interactive, visually appealing, and functional websites and web applications.</p>
+                <ul>
+                    <li><strong>JavaScript</strong> adds interactivity and dynamic behavior</li>
+                    <li><strong>HTML</strong> provides the structure and content</li>
+                    <li><strong>CSS</strong> controls the presentation and styling</li>
+                </ul>
+                <p>Whether you're a beginner starting your web development journey or an experienced developer looking for a reference, this documentation will serve as a valuable resource.</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="JavaScript_Basics">
+            <header>JavaScript Basics</header>
+            <article>
+                <p>JavaScript is a versatile programming language primarily used for client-side scripting in web browsers.</p>
+                <p>Here's a simple JavaScript function:</p>
+                <code>function greetUser(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greetUser("Developer"));</code>
+                <p>JavaScript variables can be declared using <code>var</code>, <code>let</code>, or <code>const</code>:</p>
+                <code>var oldVariable = "I'm function scoped";
+let modernVariable = "I'm block scoped";
+const constantValue = "I cannot be reassigned";</code>
+                <p>JavaScript supports various data types:</p>
+                <ul>
+                    <li>Primitive types: String, Number, Boolean, Null, Undefined, Symbol</li>
+                    <li>Complex types: Object, Array, Function</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="HTML_Fundamentals">
+            <header>HTML Fundamentals</header>
+            <article>
+                <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+                <p>A basic HTML document structure:</p>
+                <code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;My First Heading&lt;/h1&gt;
+    &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code>
+                <p>HTML elements are the building blocks of web pages:</p>
+                <ul>
+                    <li>Structural elements: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code></li>
+                    <li>Content elements: <code>&lt;h1&gt;</code>-<code>&lt;h6</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code></li>
+                    <li>Media elements: <code>&lt;img&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code></li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="CSS_Concepts">
+            <header>CSS Concepts</header>
+            <article>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
+                <p>Basic CSS syntax:</p>
+                <code>selector {
+    property: value;
+    another-property: value;
+}</code>
+                <p>CSS can be applied in three ways:</p>
+                <ul>
+                    <li>Inline styles using the style attribute</li>
+                    <li>Internal styles within a <code>&lt;style&gt;</code> element</li>
+                    <li>External styles in a separate .css file</li>
+                </ul>
+                <p>CSS selectors allow you to target specific elements:</p>
+                <code>/* Element selector */
+p {
+    color: blue;
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow;
+}
+
+/* ID selector */
+#main-header {
+    font-size: 2em;
+}</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="DOM_Manipulation">
+            <header>DOM Manipulation</header>
+            <article>
+                <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents.</p>
+                <p>JavaScript can manipulate the DOM to change content, structure, and style:</p>
+                <code>// Changing text content
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+
+// Changing styles
+document.getElementById("demo").style.color = "red";
+
+// Creating new elements
+const newElement = document.createElement("p");
+newElement.textContent = "This is a new paragraph.";
+document.body.appendChild(newElement);</code>
+                <p>Common DOM manipulation methods:</p>
+                <ul>
+                    <li><code>getElementById()</code> - selects an element by its ID</li>
+                    <li><code>getElementsByClassName()</code> - selects elements by class name</li>
+                    <li><code>getElementsByTagName()</code> - selects elements by tag name</li>
+                    <li><code>querySelector()</code> - selects the first matching element</li>
+                    <li><code>querySelectorAll()</code> - selects all matching elements</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="Responsive_Design">
+            <header>Responsive Design</header>
+            <article>
+                <p>Responsive web design ensures that web pages render well on a variety of devices and window sizes.</p>
+                <p>Key techniques include:</p>
+                <ul>
+                    <li>Fluid layouts using percentage-based widths</li>
+                    <li>Flexible images that scale with their container</li>
+                    <li>CSS media queries to apply different styles based on device characteristics</li>
+                </ul>
+                <p>Example of a media query:</p>
+                <code>@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}</code>
+                <p>Modern CSS layout techniques:</p>
+                <code>/* Flexbox example */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CSS Grid example */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Event_Handling">
+            <header>Event Handling</header>
+            <article>
+                <p>JavaScript can respond to user interactions through event handling.</p>
+                <p>Common events include:</p>
+                <ul>
+                    <li>Mouse events: click, dblclick, mousedown, mouseup</li>
+                    <li>Keyboard events: keydown, keyup, keypress</li>
+                    <li>Form events: submit, change, focus, blur</li>
+                    <li>Window events: load, resize, scroll</li>
+                </ul>
+                <p>Adding event listeners:</p>
+                <code>// Using addEventListener
+document.getElementById("myBtn").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+
+// Inline event handler
+&lt;button onclick="displayDate()"&gt;Try it&lt;/button&gt;
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Forms_Validation">
+            <header>Forms Validation</header>
+            <article>
+                <p>Form validation ensures that user input is correct and complete before submission.</p>
+                <p>HTML5 introduced built-in form validation:</p>
+                <code>&lt;form&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password" 
+           minlength="8" required&gt;
+    
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code>
+                <p>JavaScript can provide custom validation:</p>
+                <code>function validateForm() {
+    const email = document.forms["myForm"]["email"].value;
+    if (email === "") {
+        alert("Email must be filled out");
+        return false;
+    }
+}</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="CSS_Frameworks">
+            <header>CSS Frameworks</header>
+            <article>
+                <p>CSS frameworks provide pre-designed components and utilities to speed up development.</p>
+                <p>Popular CSS frameworks:</p>
+                <ul>
+                    <li>Bootstrap - most popular framework with responsive grid system</li>
+                    <li>Tailwind CSS - utility-first CSS framework</li>
+                    <li>Foundation - advanced responsive framework</li>
+                    <li>Bulma - modern CSS framework based on Flexbox</li>
+                </ul>
+                <p>Example of Bootstrap grid system:</p>
+                <code>&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-sm"&gt;One of three columns&lt;/div&gt;
+        &lt;div class="col-sm"&gt;One of three columns&lt;/div&gt;
+        &lt;div class="col-sm"&gt;One of three columns&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code>
+            </article>
+        </section>
+
+        <section class="main-section" id="Best_Practices">
+            <header>Best Practices</header>
+            <article>
+                <p>Following best practices leads to more maintainable and efficient code.</p>
+                <p>JavaScript best practices:</p>
+                <ul>
+                    <li>Use strict mode: <code>"use strict";</code></li>
+                    <li>Avoid global variables</li>
+                    <li>Use === comparison instead of ==</li>
+                    <li>Always declare variables with let or const</li>
+                </ul>
+                <p>HTML best practices:</p>
+                <ul>
+                    <li>Use semantic HTML elements</li>
+                    <li>Include alt attributes for images</li>
+                    <li>Validate your HTML code</li>
+                </ul>
+                <p>CSS best practices:</p>
+                <code>/* Use CSS variables for consistency */
+:root {
+    --primary-color: #aa8e57;
+    --secondary-color: #080808;
+    --text-color: #fff;
+}
+
+.element {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}</code>
+            </article>
+        </section>
+    </main>
+    
+    <!-- Home Logo Button at Bottom Right (Removed as requested) -->
+    
+    <script src="script.js"></script>
+</body>
+</html>

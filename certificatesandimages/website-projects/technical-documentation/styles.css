@@ -1,0 +1,292 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #080808 100%);
+    min-height: 100vh;
+}
+
+body {
+    color: #fff;
+    line-height: 1.6;
+    background: linear-gradient(135deg, rgba(8, 8, 8, 0.9) 0%, rgba(26, 26, 26, 0.9) 100%);
+    min-height: 100vh;
+}
+
+/* Burger Menu Button (Hidden by default on large screens) */
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #aa8e57, #8a6d3b);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    z-index: 1001;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-menu i {
+    font-size: 24px;
+}
+
+/* Close Menu Button (Hidden by default) */
+.close-menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #aa8e57, #8a6d3b);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    z-index: 1002;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.close-menu i {
+    font-size: 24px;
+}
+
+/* Navigation Styles */
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid rgba(170, 142, 87, 0.3);
+    background: linear-gradient(to bottom, #080808, #1a1a1a);
+    z-index: 1;
+    overflow-y: hidden; /* Remove scrolling */
+}
+
+#navbar header {
+    color: #aa8e57;
+    margin: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid rgba(170, 142, 87, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar li {
+    color: bisque;
+    border-top: 1px solid rgba(170, 142, 87, 0.2);
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+/* Home button at bottom of navbar */
+#nav-home-item {
+    margin-top: auto;
+    margin-bottom: auto;
+    border-bottom: 1px solid rgba(170, 142, 87, 0.2);
+}
+
+.home-nav-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+#navbar a {
+    display: block;
+    padding: 12px 30px;
+    color: bisque;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#navbar a:hover {
+    background: linear-gradient(to right, rgba(170, 142, 87, 0.2), transparent);
+    color: burlywood;
+    padding-left: 35px;
+}
+
+/* Main Content Styles */
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 30px;
+    margin-bottom: 110px;
+}
+
+.main-section {
+    margin-bottom: 50px;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.7), rgba(8, 8, 8, 0.7));
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #aa8e57;
+}
+
+.main-section header {
+    color: #aa8e57;
+    font-size: 1.8em;
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(170, 142, 87, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main-section article {
+    margin-left: 15px;
+}
+
+.main-section p {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.main-section ul {
+    margin: 15px 0 15px 40px;
+}
+
+.main-section li {
+    margin-bottom: 10px;
+    color: bisque;
+    padding-left: 5px;
+}
+
+/* Code Blocks */
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background: linear-gradient(to right, rgba(170, 142, 87, 0.15), rgba(170, 142, 87, 0.1));
+    color: burlywood;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    border-left: 4px solid #aa8e57;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 815px) {
+    .burger-menu {
+        display: flex;
+    }
+    
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: -300px; /* Hidden off-screen by default */
+        width: 250px;
+        height: 100%;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        border-right: 3px solid rgba(170, 142, 87, 0.3);
+    }
+    
+    #navbar.active {
+        left: 0; /* Slide in when active */
+    }
+    
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 20px;
+        padding-top: 70px; /* Make space for burger menu */
+    }
+    
+    .main-section {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .burger-menu, .close-menu {
+        top: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .burger-menu i, .close-menu i {
+        font-size: 20px;
+    }
+    
+    #navbar {
+        width: 100%;
+        left: -100%;
+    }
+    
+    #main-doc {
+        margin-left: -10px;
+    }
+
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+    }
+}
+
+/* Scrollbar Styling */
+#navbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#navbar::-webkit-scrollbar-track {
+    background: rgba(170, 142, 87, 0.1);
+}
+
+#navbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #aa8e57, #8a6d3b);
+    border-radius: 4px;
+}
+
+#navbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #8a6d3b, #aa8e57);
+}
+
+/* Highlight for active navigation */
+.nav-link.active {
+    background: linear-gradient(to right, rgba(170, 142, 87, 0.3), transparent) !important;
+    color: burlywood !important;
+    font-weight: bold;
+}
