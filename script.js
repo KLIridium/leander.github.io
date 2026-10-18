@@ -211,9 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize mobile scaling
     handleMobileScaling();
     window.addEventListener('resize', handleMobileScaling);
-});
-
-// Resume download functionality
+    // Resume download functionality
 const resumeBtn = document.getElementById('resume-download-btn');
 const downloadNotification = document.querySelector('.download-notification');
 
@@ -227,4 +225,25 @@ resumeBtn.addEventListener('click', function(e) {
             downloadNotification.classList.remove('show');
         }, 3000);
     }, 100);
-});    
+});
+
+    // Experience Description Toggle
+    const toggleBtns = document.querySelectorAll('.toggle-desc-btn');
+    
+    toggleBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Get the sibling list (the experience details)
+            const details = this.closest('.experience-header').nextElementSibling;
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle the state
+            this.setAttribute('aria-expanded', !isExpanded);
+            
+            if (!isExpanded) {
+                details.classList.add('open');
+            } else {
+                details.classList.remove('open');
+            }
+        });
+    });
+});
