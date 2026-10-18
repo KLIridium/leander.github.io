@@ -648,3 +648,62 @@ li {
     transform: translateY(0);
     opacity: 1;
 }
+
+/* --- Experience Toggle Styles --- */
+.experience-header {
+    display: flex;
+    justify-content: space-between; /* Pushes text left, button right */
+    align-items: flex-start; /* Aligns button to the top */
+    gap: 15px;
+}
+
+.toggle-desc-btn {
+    background-color: transparent;
+    border: 1px solid #aa8e57;
+    color: #aa8e57;
+    width: 35px;       /* Make sure it's 35px, not 15px */
+    height: 35px;      /* Make sure it's 35px, not 15px */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.toggle-desc-btn:hover {
+    background-color: #aa8e57;
+    color: #080808;
+    transform: scale(1.1);
+}
+
+.toggle-desc-btn i {
+    transition: transform 0.4s ease;
+}
+
+.toggle-desc-btn[aria-expanded="true"] {
+    background-color: #aa8e57;
+    color: #080808;
+}
+
+.toggle-desc-btn[aria-expanded="true"] i {
+    transform: rotate(45deg);
+}
+
+/* --- Smooth Dropdown Transition --- */
+.experience-details {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 0;
+    padding-left: 20px;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+}
+
+.experience-details.open {
+    max-height: 500px; 
+    opacity: 1;
+    margin-top: 15px;
+}
